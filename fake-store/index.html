@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div class="filtros">
+        <select  id="ordenarPor">
+            <option disabled selected>Filtro de Pesquisa</option>
+            <option value="1">Mais Populares</option>
+            <option value="2">Mais Caros</option>
+            <option value="3">Mais Baratos</option>
+        </select>
+        <select id="categoria"  onchange="getCategorias()">
+            <option disabled selected>Escolha uma categoria</option>
+        </select>
+        <input type="text" id="busca" placeholder="Pesquise por produto">
+    </div>
+    <ul id="cartoes">
+        <li class="loading">
+            <img src="/img/undraw_undraw_shopping_bags_2ude_-1-_mnw3.svg" alt="">
+            <h3>Carregando produtos...</h3>
+        </li>           
+    </ul>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
